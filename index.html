@@ -18,6 +18,11 @@
 </style>
 </head>
 <body>
+
+    <div id="top"></div>
+    
+    
+
     <ol>
         <li>JCVD <a href="#jcvd">ICI</a></li>
         <li>Patrick Sébastien <a href="#PatrickSébastien">ICI</a></li>
@@ -106,11 +111,10 @@
         <li>Angleterre</li>
     </ol>
 
-    liens vers le site de la fifa : <a href="www.fifa.com">Fifa</a> <br>
+    liens vers le site de la fifa : <a href="https://fr.fifa.com/">Fifa</a> <br>
 
     <a href="#top">Retour en haut</a>
-    <section>
-        <h1 id="table">Tableau</h1>
+        <h1 id="Tableau">Tableau</h1>
         <table> 
             <thead> 
                 <tr> 
@@ -140,9 +144,20 @@
             </tfoot>
         </table>
         <a href="#top">Retour en haut</a> 
-    </section>
-
-
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+      $('a[href*=#]').on('click', function () { // Au clic sur un élément
+        var page = $(this).attr('href'); // Page cible
+        var speed = 500; // Durée de l'animation (en ms)
+        $('html, body').animate({
+          scrollTop: $(page).offset().top
+        }, speed, 'swing'); // Go
+        return false;
+      });
+    });
+  </script>
 
 
     
