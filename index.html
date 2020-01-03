@@ -13,15 +13,9 @@
         }
         td, th
         {
-            border: 1px solid black;
+            border: 1px solid whitesmoke;
         }
-</style>
-</head>
-<body>
-
-    <div id="top"></div>
-    
-    
+    </style>
 
     <ol>
         <li>JCVD <a href="#jcvd">ICI</a></li>
@@ -30,16 +24,42 @@
         <li>Tableau <a href="#Tableau">ICI</a></li>
     </ol>
 
-    
+
     <h1 id="jcvd">JCVD</h1>
-    <div class="imageJCVD">
-        <img src="./img/JCVD3.gif" alt="Image de Jean claude Van Damme">
-        <img src="./img/JCVD3.gif" alt="Image de Jean claude Van Damme">  
-        <img src="./img/JCVD3.gif" alt="Image de Jean claude Van Damme">       
-    </div>
+
+
+    <script Language="JavaScript">
+    
+    var img0 = "img/jcvd0.jpg"
+    var img1 = "img/jcvd.jpg"
+    var img2 = "img/jcvd2.jpg"
+    var img3 = "img/jcvd3.jpg"
+    
+    var rnd = Math.round(Math.random()*3)
+    
+    if (rnd == 0){newimg = img0};
+    if (rnd == 1){newimg = img1};
+    if (rnd == 2){newimg = img2};
+    if (rnd == 3){newimg = img3};
+    </script>
+</head>
+
+<body>
+
+<script Language="JavaScript">
+document.write('&nbsp; &nbsp; &nbsp; <IMG SRC="'+newimg+'">')
+</script>
+<br><br>
+<font-face="Tahoma"  size="3">
+<p> Cliquez <a href="javascript:location.reload()" target="_self">ici</a>
+si tu veux voir une autre foto de notre Jean Claude.</font-face></p>
+
+    <div id="top"></div>
     
     
-    <p>
+    <span id="txtjcvd" style="position:relative";> 
+        Merci d'utiliser outils-web.com
+        
         Tu vois, si vraiment tu veux te rappeler des souvenirs de ton perroquet, il y a de bonnes règles, de bonnes rules puisque the final conclusion of the spirit is perfection Et tu as envie de le dire au monde entier, including yourself.
 
         Je me souviens en fait, je sais que, grâce à ma propre vérité c'est un très, très gros travail et c'est très, très beau d'avoir son propre moi-même ! Donc on n'est jamais seul spirituellement ! <br>
@@ -59,8 +79,8 @@
         Je me souviens en fait, si vraiment tu veux te rappeler des souvenirs de ton perroquet, il y a de bonnes règles, de bonnes rules et cela même si les gens ne le savent pas ! Et j'ai toujours grandi parmi les chiens. <br>
         
         Tu vois, si vraiment tu veux te rappeler des souvenirs de ton perroquet, il y a de bonnes règles, de bonnes rules et je ne cherche pas ici à mettre un point ! Tu vas te dire : J'aurais jamais cru que le karaté guy pouvait parler comme ça ! <br> 
-    </p>
-
+    </span> 
+    
     <a href="#top">Retour en haut</a>
     <h1 id="PatrickSébastien">Patrick Sébastien</h1>
     <p>
@@ -117,7 +137,7 @@
         <li>Angleterre</li>
     </ol>
 
-    liens vers le site de la fifa : <a href="https://fr.fifa.com/">Fifa</a> <br>
+    <p> liens vers le site de la fifa : <a href="https://fr.fifa.com/">Fifa</a> </p><br>
 
     <a href="#top">Retour en haut</a>
         <h1 id="Tableau">Tableau</h1>
@@ -133,12 +153,12 @@
                 <tr>
                     <td>Tartempion</td>
                     <td>27</td>  
-                    <td><img width="25%" src="./img/Drapeau de la France.gif" alt="Drapeau de la France"></td>
+                    <td><img width="25%" src="./img/drapeauFrance.jpg" alt="Drapeau de la France"></td>
                 </tr>
                 <tr>
                     <td>Vanderbuck</td>
                     <td>32</td>
-                    <td><img width="25%" src="./img/drapeau-de-la-Belgique.gif" alt ="Drapeau Belge"></td>   <!-- je sais c'est moche XD --> 
+                    <td><img width="25%" src="./img/DrapeauBelgique.jpg" alt ="Drapeau Belge"></td>   
                 </tr>
             </tbody>
             <tfoot> 
@@ -165,6 +185,12 @@
     });
   </script>
 
+
+
+  
+
+
+    <script type="text/javascript" src="index.js"></script>
 
     
 </body>
